@@ -1,10 +1,9 @@
-class Student:
+from person import NSSPerson
+
+class Student(NSSPerson):
     def __init__(self, first_name, last_name, slack_handle, cohort):
-        self.first_name = first_name
-        self.last_name = last_name
-        self.slack_handle = slack_handle
-        self.cohort = cohort
-        self.exercises = list()
+        super().__init__(first_name, last_name, slack_handle, cohort)
+        self.exercise = list()
     
     def __str__(self):
         return f"{self.first_name}{self.last_name} is in {self.cohort}. Their slack handle is {self.slack_handle}."
