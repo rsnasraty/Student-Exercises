@@ -3,17 +3,6 @@ from exercise import Exercise
 from instructor import Instructor
 from student import Student
 
-"""
-Once you have defined all of your custom types, go to main.py, import the classes you need, and implement the following logic.
-
-Create 4, or more, exercises.
-Create 3, or more, cohorts.
-Create 4, or more, students and assign them to one of the cohorts.
-Create 3, or more, instructors and assign them to one of the cohorts.
-Have each instructor assign 2 exercises to each of the students.
-"""
-
-
 petting_zoo = Exercise("Petting Zoo", "Python")
 cash_4_coins = Exercise("Cash 4 Coins", "Python")
 kennel = Exercise("Kennel", "React")
@@ -29,6 +18,12 @@ makoto = Student("Makoto", "Tachibana", "tachibana_coach", c41)
 haru  = Student("Haru", "Nanase", "swim_free", c41)
 kylo = Student("Kylo", "Ren", "vader_stan", c38)
 rey  = Student("Rey", "Nobody", "the_scavenger", c38)
+
+roxanne.full_name
+makoto.full_name
+haru.full_name
+kylo.full_name
+rey.full_name
 
 joe = Instructor("Joe", "Shepherd", "banAgazon", "sass", c40)
 bryan = Instructor("Bryan", "Nilsen", "bry5", "jokes", c41)

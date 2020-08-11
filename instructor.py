@@ -1,12 +1,10 @@
+from person import NSSPerson
+
 class Instructor:
     
-    def __init__(self, first_name, last_name, slack_handle, cohort, specialty):
-
-        self.first_name = first_name
-        self.last_name = last_name
-        self.slack_handle = slack_handle
-        self.cohort = cohort
+    def __init__(self, first, last, slack, cohort, specialty):
+        super().__init__(first,last, slack, cohort)
         self.specialty = specialty
 
-    def add_exercises(self, student, exercises):
-        student.exercises.extend([exercises])
+    def add_exercises(self, student, exercise):
+        student.exercise.extend([exercise])
